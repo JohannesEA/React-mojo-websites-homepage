@@ -1,24 +1,29 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-::root {
---default-section-height:40em ;
---default-section-color: #4D4DFF;
---default-image-height: 100em;
---default-image-width: 100em;
---default-box-radius: 100%;
---default-span-color: #4D4DFF;
---default-btn-color: #4D4DFF;
+
+body {
+  box-sizing: border-box;
 }
 
-.section{
+:root {
+  --default-section-height: 40em;
+  --default-section-color: #4D4DFF;
+  --default-image-height: 100em;
+  --default-image-width: 100em;
+  --default-box-radius: 100%;
+  --default-span-color: #4D4DFF;
+  --default-btn-color: #4D4DFF;
+}
+
+.section {
   height: 50em;
   width: 100%;
-background-color: white;
+  background-color: white;
 }
 
-.section img{
+.section img {
   max-height: var(--default-image-height);
   max-width: var(--default-image-width);
   height: 30em;
@@ -26,33 +31,41 @@ background-color: white;
   border-radius: var(--default-box-radius);
 }
 
-span{
-  color: rgb(0, 7, 109);
+span {
+  color: var( --default-span-color);
 }
 
-.btn{
+.btn {
   padding: .5em;
   bottom: 0;
   margin-top: 3em;
   background-color: aliceblue;
   font-size: 1.5rem;
   color: black;
-text-decoration: none;
-border-radius: 1rem;
-outline: none;
-border: none;
+  text-decoration: none;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
 }
 
-.btn:hover{
+.btn:hover {
   box-shadow: 0 0 1px 2px rgb(204, 204, 204);
 }
 
-.hero-title{
+ul  {
+  text-decoration: center;
+  cursor: pointer;
+  list-style-type: none;
+
+}
+
+
+/*Hero*/
+.hero-title {
   font-size: 4rem;
 }
-/*Hero*/
 
-.hero{
+.hero {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -62,7 +75,7 @@ border: none;
   background-color: aliceblue;
 }
 
-.hero-content{
+.hero-content {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -70,15 +83,15 @@ border: none;
   font-size: 1rem;
   height: 30em;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   background-color: white;
   border-radius: 4em 1em 6em 6em;
 
 
-  
+
 }
 
-.hero-text{
+.hero-text {
   font-size: 1.5rem;
   padding: 2rem;
   width: 20em;
@@ -87,11 +100,12 @@ border: none;
 
 
 .hero-img {
-    padding: 1em;
-   margin: auto;
+  padding: 1em;
+  margin: auto;
 }
 
-.hero-img img{
-border-radius: 2em 8em;
+.hero-img img {
+  border-radius: 2em 8em;
 }
+
 /*End of Hero*/
