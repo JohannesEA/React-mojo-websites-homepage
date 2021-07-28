@@ -2,7 +2,7 @@
 
 
 
-function Portfolio() {
+const Portfolio = () => {
     return (
       <div className="section portfolio">
 

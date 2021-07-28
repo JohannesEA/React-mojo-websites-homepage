@@ -1,7 +1,7 @@
 
 
 
-function Contact() {
+const Contact = () => {
     return (
       <div className="section contact">
 
