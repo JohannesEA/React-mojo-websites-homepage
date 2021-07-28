@@ -15,7 +15,16 @@ body {
   --default-box-radius: 100%;
   --default-span-color: #4D4DFF;
   --default-btn-color: #4D4DFF;
+  --default--background--color: #004e7a;
+  --default--font--color: white;
+  --default-color-1: #212226;
+  --default-color-2: #88898C;
+  --default-color-3: #3D3E40;
+  --default-color-4: #D5E5F2;
+  --default-color-5: #EBEFF2;
 }
+
+
 
 .section {
   height: 50em;
