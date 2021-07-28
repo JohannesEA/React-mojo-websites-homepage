@@ -94,4 +94,11 @@ border: none;
 .hero-img img{
 border-radius: 2em 8em;
 }
+
+@media screen and (max-width: 1200px) {
+  
+  .hero{
+    flex-direction: column;
+  }
+}
 /*End of Hero*/

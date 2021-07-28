@@ -1,6 +1,6 @@
 
 
-function About() {
+const About = () => {
     return (
       <div className="section about">
 

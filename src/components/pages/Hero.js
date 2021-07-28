@@ -1,4 +1,4 @@
-function Hero() {
+const Hero = () => {
     return (
       <div className="section hero">
 
