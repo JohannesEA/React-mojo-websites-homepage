@@ -38,7 +38,7 @@ const NavBar = () => {
       
         <div className="nav-container-right">
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
+          <li className="nav-item nav-item-home">
             <Link
               to="hero"
               className="nav-links"
@@ -51,7 +51,7 @@ const NavBar = () => {
               Hjem
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item nav-item-about">
             <Link
               to="about"
               className="nav-links"
@@ -64,7 +64,7 @@ const NavBar = () => {
               Om oss
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item nav-item-services">
             <Link
               to="services"
               className="nav-links"
@@ -77,7 +77,7 @@ const NavBar = () => {
               Hva vi tilbyr
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item nav-item-portfolio">
             <Link
               to="portfolio"
               className="nav-links"
@@ -90,7 +90,7 @@ const NavBar = () => {
               Portfolio
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item nav-item-contact">
             <Link
               to="contact"
               className="nav-links"

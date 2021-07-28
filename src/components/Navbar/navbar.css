@@ -53,12 +53,13 @@
 }
 
 .nav-links {
-
+padding-right: 0;
   color:white;
   font-weight: 500;
   text-decoration: none;
-  margin-right: 1.2em;
   height: 100%;
+  text-align: center;
+  
 }
 
 .fa-code {
@@ -69,6 +70,11 @@
 .nav-item {
   line-height: 30px;
   width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto .5em;
+  flex-direction: column;
   
 }
 
@@ -77,12 +83,13 @@
 }
 
 .nav-item:after {
+
   content: "";
   display: block;
   height: 1px;
   width: 0;
   padding: 0;
-  transition: width 0.7s ease, background-color 0.5s ease;
+  transition: width 0.7s ease, background-color 0.5s ease ;
 }
 
 .nav-item:hover:after {
