@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./navbar.css";
+import Hamburger from 'hamburger-react'
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
@@ -16,10 +17,12 @@ const NavBar = () => {
     }
   };
   window.addEventListener("scroll", changeNavbarSize);
+  const [isOpen, setOpen] = useState(false)
+
+
   return (
     <div className={sizeChange ? "navbar nav-size-change-on-scroll" : "navbar"}>
       
-        <div className="nav-container-left">
         
     <li className="nav-logo-link">
           <Link
@@ -30,9 +33,9 @@ const NavBar = () => {
             offset={-100}
             duration={300}
           >
-            Mojo websites
+            Mo<span>Jo</span>
           </Link></li>
-        </div>
+      
         <div className="nav-container-right">
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
@@ -101,8 +104,8 @@ const NavBar = () => {
             </Link>
           </li>
         </ul>
-        <div className="nav-icon" onClick={handleClick}>
-          <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+        <div className="hamburger" onClick={handleClick}>
+        <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
     </div>
     </div>
