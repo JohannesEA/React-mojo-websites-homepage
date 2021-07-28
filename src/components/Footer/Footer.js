@@ -1,4 +1,4 @@
-
+import "./footer.css";
 
 const Footer = () => {
     return (
@@ -6,13 +6,36 @@ const Footer = () => {
 
       
           <div className="footer-content">   
-           <div className="footer-title title">Mojo Websites</div>
-          <div className="footer-text"></div>
+          <div className="footer-left">
+           
+          <div className="footer-text">footer text</div>
+            <ul className="footer-links">
+            <li>Kontakt oss</li>
+            <li>Prosjekter</li>
+            <li>galleri</li></ul>
           </div>
 
-          <div className="footer-img">
-          <img class="img" alt="hero-img"></img>
+          <div className="footer-center">
+           
+          <div className="footer-text">footer text</div>
+            <ul className="footer-links">
+            <li>Kontakt oss</li>
+            <li>Prosjekter</li>
+            <li>galleri</li></ul>
           </div>
+
+          <div className="footer-right">
+     
+          <div className="footer-text">footer text</div>
+            <ul className="footer-links">
+            <li>Kontakt oss</li>
+            <li>Prosjekter</li>
+            <li>galleri</li></ul>
+          </div>
+
+          </div>
+
+        <div className="copyright">MoJo Copiright@</div>
        
       </div>
     );

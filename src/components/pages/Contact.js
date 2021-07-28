@@ -12,7 +12,7 @@ const Contact = () => {
           </div>
 
           <div className="contact-img">
-          <img class="img"alt="hero-img"></img>
+        
           </div>
        
       </div>

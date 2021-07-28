@@ -1,0 +1,29 @@
+.footer {
+  background-color: #d99543;
+  width: auto;
+  height: 14em;
+  padding: 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: start;
+  justify-content: space-between;
+  color: black;
+}
+
+.footer-links li {
+  padding: 5px 7em;
+  font-size: 18px;
+}
+
+.copyright {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  color: #51608c;
+
+  justify-content: center;
+}

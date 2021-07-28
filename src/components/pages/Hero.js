@@ -10,7 +10,7 @@ const Hero = () => {
   </div>
 
           <div className="hero-img">
-          <img src="/assets/images/hero-img.jpg"  alt="hero-img"></img>
+         
           </div>
 
        
