@@ -108,10 +108,7 @@ const NavBar = () => {
         <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
 
-        <div className="language-select">
-        <img alt="norway" src="/assets/images/Norway.gif"></img>
-          <img alt="norway" src="/assets/images/English.png"></img>
-        </div>
+     
     </div>
     </div>
   );

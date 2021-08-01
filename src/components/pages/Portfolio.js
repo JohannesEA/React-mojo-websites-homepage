@@ -13,7 +13,7 @@ const Portfolio = () => {
           </div>
 
           <div className="portfolio-img">
-          <img class="img" src="../public" alt="hero-img"></img>
+          <img className="img" src="../public" alt="hero-img"></img>
           </div>
        
       </div>

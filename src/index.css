@@ -7,6 +7,21 @@ body {
   box-sizing: border-box;
 }
 
+.MuiFab-label{
+  color: var(--default-color-3);
+}
+.MuiButtonBase-root{
+  z-index: 1001;
+  background-color: var(--default-color-4) !important;
+  position:fixed !important;
+  bottom:auto !important;
+  right:0 !important;
+  left: auto !important;
+  top: 6em !important;
+}
+
+
+
 :root {
   --default-section-height: 40em;
   --default-section-color: #4D4DFF;
@@ -56,6 +71,7 @@ span {
   border-radius: 1rem;
   outline: none;
   border: none;
+  
 }
 
 .btn:hover {
@@ -97,7 +113,6 @@ ul  {
   height: 30em;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
   border-radius: 4em 1em 6em 6em;
 
 
@@ -114,10 +129,13 @@ ul  {
 .hero-img {
   padding: 1em;
   margin: auto;
+ 
 }
 
 .hero-img img {
   border-radius: 2em 8em;
+  width: 44em;
+  height: 30em;
 }
 
 .hero-btn-service{
@@ -126,7 +144,18 @@ ul  {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 960px) {
+
+.hero-buttons{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero-buttons button{
+width: 8em;
+}
+@media screen and (max-width: 1200px) {
 
   .hero{
     height: auto;
@@ -134,6 +163,37 @@ ul  {
     justify-content: center;
     flex-direction: column;
   }
+
+  .hero-img {
+    width: 40em;
+    height: 25em;
+  }
+
+  .hero-img img{
+    width: 40em;
+    height: 25em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+
+
+  .hero-img {
+    width: 40em;
+    height: 25em;
+  }
+
+  .hero-img img{
+    width: 40em;
+    height: 25em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+
+
 }
 
 /*End of Hero*/
