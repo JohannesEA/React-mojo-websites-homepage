@@ -1,7 +1,7 @@
 
 
 .navbar {
-  background-color: var(--default-color-1);
+  background-color: var(--default-color-4);
   height: 5em;
   width: 100%;
   padding: 0;
@@ -32,9 +32,12 @@
 }
 
 .nav-size-change-on-scroll {
-  height: 4em;
-  transition: 1s;
 
+  
+
+}
+
+.nav-menu-size-change-on-scroll{
 }
 
 .nav-container-right {
@@ -50,11 +53,12 @@
   display: flex;
   list-style: none;
   text-align: center;
+  z-index: 1000;
 }
 
 .nav-links {
 padding-right: 0;
-  color:white;
+  color:var(--default-color-3);
   font-weight: 500;
   text-decoration: none;
   height: 100%;
@@ -109,23 +113,26 @@ padding-right: 0;
     width: 100%;
     border-top: 1px solid var(--default--font--color);
     position: absolute;
+    left: -110px;
     top: 80px;
-    left: -110%;
-    opacity: 1;
-    transition: all 0.5s ease;
+    opacity: 0;
+    transition: all 0.8s ease;
+    z-index: 999;
+    padding-bottom: .6em;
   }
 
   .nav-menu.active {
-    background: var(--default-color-1);
-    left: 0px;
+    background: var(--default-color-4);
+    left: 0;
     opacity: 1;
+    animation: fadeIn 1s;
     transition: all 0.5s ease;
     z-index: 1;
 
   }
 
   .nav-item .active {
-    color: var(--default--font--color);
+    color: var(--default-color-3);
     border: none;
   }
 
@@ -133,6 +140,7 @@ padding-right: 0;
     padding: 1.5rem;
     width: 100%;
     display: table;
+    color: var(--default-color-3);
 
   }
 
@@ -146,7 +154,12 @@ padding-right: 0;
     transform: translate(-15%, 50%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: var(--default--font--color);
+    color: var(--default-color-3);
 
   }
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

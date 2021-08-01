@@ -17,11 +17,11 @@ body {
   --default-btn-color: #4D4DFF;
   --default--background--color: #004e7a;
   --default--font--color: white;
-  --default-color-1: #212226;
-  --default-color-2: #88898C;
-  --default-color-3: #3D3E40;
-  --default-color-4: #D5E5F2;
-  --default-color-5: #EBEFF2;
+  --default-color-1: #787B7F;
+  --default-color-2: #A2D1FF;
+  --default-color-3: #F0F7FF;
+  --default-color-4: #52697F;
+  --default-color-5: #C0C6CC;
 }
 
 
@@ -32,6 +32,7 @@ body {
   background-color: white;
 }
 
+
 .section img {
   max-height: var(--default-image-height);
   max-width: var(--default-image-width);
@@ -41,16 +42,16 @@ body {
 }
 
 span {
-  color: var( --default-span-color);
+  color: var( --default-color-2);
 }
 
 .btn {
   padding: .5em;
   bottom: 0;
-  margin-top: 3em;
-  background-color: aliceblue;
+  margin: 2em 1em;
+  background-color: var(--default-color-4);
   font-size: 1.5rem;
-  color: black;
+  color: white;
   text-decoration: none;
   border-radius: 1rem;
   outline: none;
@@ -58,7 +59,8 @@ span {
 }
 
 .btn:hover {
-  box-shadow: 0 0 1px 2px rgb(204, 204, 204);
+  box-shadow: 1px 2px 2px  var(--default-color-2);
+  transition: .3s ease;
 }
 
 ul  {
@@ -71,7 +73,7 @@ ul  {
 
 /*Hero*/
 .hero-title {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .hero {
@@ -81,7 +83,9 @@ ul  {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: aliceblue;
+  background-color: var(--default-color-3);
+
+  /* background-color: aliceblue; */
 }
 
 .hero-content {
@@ -93,7 +97,7 @@ ul  {
   height: 30em;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: transparent;
   border-radius: 4em 1em 6em 6em;
 
 
@@ -104,7 +108,6 @@ ul  {
   font-size: 1.5rem;
   padding: 2rem;
   width: 20em;
-  margin: 1em 3em;
 }
 
 
@@ -115,6 +118,22 @@ ul  {
 
 .hero-img img {
   border-radius: 2em 8em;
+}
+
+.hero-btn-service{
+  background-color: var(--default-color-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 960px) {
+
+  .hero{
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 /*End of Hero*/

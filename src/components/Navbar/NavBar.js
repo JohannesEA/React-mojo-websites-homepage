@@ -37,7 +37,7 @@ const NavBar = () => {
           </Link></li>
       
         <div className="nav-container-right">
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <ul className={click ? "nav-menu active" : "nav-menu" && sizeChange ? "nav-menu nav-menu-size-change-on-scroll" : "nav-menu"}>
           <li className="nav-item nav-item-home">
             <Link
               to="hero"
@@ -106,6 +106,11 @@ const NavBar = () => {
         </ul>
         <div className="hamburger" onClick={handleClick}>
         <Hamburger toggled={isOpen} toggle={setOpen} />
+        </div>
+
+        <div className="language-select">
+        <img alt="norway" src="/assets/images/Norway.gif"></img>
+          <img alt="norway" src="/assets/images/English.png"></img>
         </div>
     </div>
     </div>
