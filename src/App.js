@@ -3,12 +3,17 @@ import NavBar from "./components/Navbar/NavBar";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Hero from "./components/pages/Hero";
-import Portfolio from "./components/pages/Portfolio";
+// import Portfolio from "./components/pages/Portfolio";
 import Fab from "@material-ui/core/Fab"
 // import AddIcon from '@material-ui/icons/Add';
+import Services from "./components/pages/Services";
+import { IMAGES } from "./data/data";
+
+
+
 import "./index.css"
 import React, { useState } from "react";
-import Services from "./components/pages/Services";
+import Portfolio from "./components/pages/Portfolio";
 
 function App() {
 
@@ -25,7 +30,7 @@ function App() {
      <Hero/>
      <About/>
      <Services/>
-     <Portfolio/>
+    <Portfolio images={IMAGES} slidesToShow={3}/>
      <Contact/>
      <Footer/>
     </div>

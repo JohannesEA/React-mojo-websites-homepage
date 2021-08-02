@@ -1,3 +1,8 @@
+/*img slider imports*/
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+/*end of img slider imports*/
+
 /*Defaults*/
 * {
   margin: 0;
@@ -506,3 +511,14 @@ color: var(--color-5);
   }
 
 /*End of services*/
+
+
+/*Portfolio*/
+
+.portfolio {
+  height: 50em;
+  text-align: center;
+  padding-top: 3em;
+}
+
+/*End of portfolio*/

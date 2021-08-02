@@ -1,0 +1,146 @@
+/* src/components/ImageSlider.css */
+
+
+.imageslider-container{
+    height: auto;
+    padding-top: 3em;
+}
+.slide {
+    transform: scale(0.7);
+    transition: transform 300ms;
+    opacity: 0.5;
+    border-radius: var(--default-box-radius);
+    box-shadow: 0 8px 16px 0 var(--color-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideWrapper {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+.slideWrapper img {
+    height: 25em;
+    width: 20em;
+}
+
+.prevArrow {
+    position: absolute;
+    top: 9em;
+    left: 50px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.nextArrow {
+    position: absolute;
+    top: 9em;
+    right: 50px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.activeSlide{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 8px 16px 0 var(--color-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--default-box-radius);
+
+z-index: 2;
+}
+
+.slideText {
+    text-align: center;
+}
+
+
+@media (max-width: 1100px) {
+
+  
+    .prevArrow {
+        left: 30px;
+    }
+
+    .nextArrow {
+        right: 30px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .activeSlide .slideText {   
+    width: 40em;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .activeSlide .slideText {   
+        width: 35em;
+        }
+
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .activeSlide .slideText {   
+        width: auto;
+        }
+
+    .slideWrapper img {
+        height: 31em;
+        width: 19em;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+ 
+    .slideWrapper img {
+        height: 30em;
+        width: 17em;
+
+    }
+
+    .prevArrow {
+        left: 40px;
+    }
+
+    .nextArrow {
+        right: 40px;
+    }
+
+}
+
+
+@media (max-width: 340px) {
+
+    .slideWrapper img {
+        height: 26em;
+        width: 14em;
+    }
+
+    .prevArrow {
+        left: 30px;
+    }
+
+    .nextArrow {
+        right: 30px;
+    }
+
+}
