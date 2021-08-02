@@ -1,4 +1,4 @@
-
+import "./footer.css";
 
 const Footer = () => {
     return (
@@ -6,13 +6,11 @@ const Footer = () => {
 
       
           <div className="footer-content">   
-           <div className="footer-title title">Mojo Websites</div>
+           <div className="footer-title title">MoJo</div>
           <div className="footer-text"></div>
           </div>
 
-          <div className="footer-img">
-          <img className="img" alt="hero-img"></img>
-          </div>
+        
        
       </div>
     );

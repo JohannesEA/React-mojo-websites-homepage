@@ -33,7 +33,7 @@ const NavBar = () => {
             offset={-100}
             duration={300}
           >
-            Mo<span>Jo</span>
+            MoJo
           </Link></li>
       
         <div className="nav-container-right">

@@ -1,0 +1,31 @@
+.footer{
+    height: 8em;
+    width: 100%;
+    background-color: var(--color-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-left: 1em;
+    width: 86px;
+    height: 45px;
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 45px;
+    cursor: pointer;
+
+}
+
+.footer-title {
+    background: -webkit-linear-gradient(rgb(0, 16, 245), rgb(240, 240, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
