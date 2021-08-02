@@ -364,6 +364,7 @@ flex-direction: row;
   align-items: center;
   flex-direction: column;
   text-align: center;
+
   font-size: var(--text-2);
   color: var(--color-5);
 }
@@ -374,8 +375,8 @@ flex-direction: row;
 }
 
 .about-imgs img{
-  height: 23em;
-  width: 17em;
+  height: 22em;
+  width: 17.5em;
 margin: auto var(--padding-1)
 }
 

@@ -8,7 +8,7 @@ const Contact = () => {
       
           <div className="contact-content">   
            <div className="contact-title title">Mojo Websites</div>
-          <div className="contact-text"></div>
+          <div className="contact-text text"></div>
           </div>
 
           <div className="contact-img">
