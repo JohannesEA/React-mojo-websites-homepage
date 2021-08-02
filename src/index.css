@@ -9,7 +9,10 @@
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
-
+a{
+  color: white !important;
+  text-decoration: none !important;
+}
 body {
   box-sizing: border-box;
 }
@@ -517,9 +520,124 @@ color: var(--color-5);
 /*Portfolio*/
 
 .portfolio {
-  height: 50em;
+  height: auto;
   text-align: center;
   padding-top: 3em;
+  margin-bottom: 2em;
 }
 
 /*End of portfolio*/
+
+
+/*Contact*/
+.contact {
+  height: auto;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color-3);
+
+}
+
+.contact-text {
+
+  margin-bottom: 3em;
+
+}
+
+.contact-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 2px 20px 0px rgb(211, 211, 211);
+  max-width: 45em;
+  padding: 2em;
+  border-radius: 7px;
+  background-color: white;
+  
+}
+
+.contact-form-container:hover {
+  box-shadow: 1px 2px 27px 0px rgb(211, 211, 211);
+
+}
+
+.contact-form {
+  max-width: 40em;
+  width: 40em;
+}
+
+.form-info-email {
+  text-align: center;
+  width: 100%;
+}
+
+.form-title {
+  font-size: 20px;
+  width: 100%;
+}
+
+.form-input {
+  height: 3em;
+  margin: 15px auto;
+}
+
+.form-textarea {
+  min-height: 10em;
+}
+
+.contact-btn-area {
+  margin-top: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+
+@media (max-width: 800px) {
+  .contact-form,
+  .contact-text {
+    width: 30em;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form,
+  .contact-text {
+    width: 25em;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-form,
+  .contact-text {
+    width: 20em;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-form,
+  .contact-text {
+    width: 16em;
+  }
+}
+
+@media (max-width: 350px) {
+  .contact-form,
+  .contact-text {
+    width: auto;
+  }
+
+  .contact-form-container {
+    width: auto;
+    padding: auto;
+  }
+  
+
+
+}
+
+/*end of contact*/

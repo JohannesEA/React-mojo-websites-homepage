@@ -21,7 +21,7 @@ const NavBar = () => {
 
 
   return (
-    <div className={sizeChange ? "navbar nav-size-change-on-scroll" : "navbar"}>
+    <div className={sizeChange ? "my-navbar nav-size-change-on-scroll" : "my-navbar"}>
       
         
     <li className="nav-logo-link">
