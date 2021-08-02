@@ -8,6 +8,7 @@ import Fab from "@material-ui/core/Fab"
 // import AddIcon from '@material-ui/icons/Add';
 import "./index.css"
 import React, { useState } from "react";
+import Services from "./components/pages/Services";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     </Fab>
      <Hero/>
      <About/>
+     <Services/>
      <Portfolio/>
      <Contact/>
      <Footer/>

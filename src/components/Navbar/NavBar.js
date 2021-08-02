@@ -74,7 +74,7 @@ const NavBar = () => {
               duration={300}
               onClick={handleClick}
             >
-              Hva vi tilbyr
+              Tjenester
             </Link>
           </li>
           <li className="nav-item nav-item-portfolio">
@@ -87,7 +87,7 @@ const NavBar = () => {
               duration={300}
               onClick={handleClick}
             >
-              Portfolio
+              Portfølje
             </Link>
           </li>
           <li className="nav-item nav-item-contact">
