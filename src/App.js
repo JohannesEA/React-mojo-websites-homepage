@@ -24,8 +24,8 @@ function App() {
     <div className="App">
   
     <NavBar/>
-    <Fab  color="primary" aria-label="add">
-    <img src={!isNorwegian ? "/assets/images/Norway.gif" : "/assets/images/English.png"} alt="flag-img" onClick={handleClick}></img>
+    <Fab className="language-selector" color="primary" aria-label="add">
+    <img  src={!isNorwegian ? "/assets/images/norwegian.png" : "/assets/images/english-logo.png"} alt="flag-img" onClick={handleClick}></img>
     </Fab>
      <Hero/>
      <About/>

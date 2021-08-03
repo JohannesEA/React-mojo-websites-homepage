@@ -25,6 +25,10 @@
 
 }
 
+.footer-link{
+    cursor: pointer;
+}
+
 .footer-copyright{
     bottom: 0;
     text-align: center;
@@ -37,4 +41,5 @@
     color: white;
     margin: auto 1em;
     font-size: 2em;
+    cursor: pointer;
 }

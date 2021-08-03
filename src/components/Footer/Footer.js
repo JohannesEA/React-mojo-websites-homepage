@@ -1,3 +1,4 @@
+import {Link} from "react-scroll";
 import "./footer.css";
 
 const Footer = () => {
@@ -6,7 +7,16 @@ const Footer = () => {
 
       
           <div className="footer-content">   
-           <div className="footer-title title">MoJo</div>
+           <div className="footer-title title">
+           <Link
+              to="hero"
+              className="footer-link"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={400}
+              >MoJo</Link>
+              </div>
           <div className="text footer-text">MoJo Websites for deg som ønsker en enkel og perfekt fungerende nettside.</div>
           <div className="footer-icons">
           <i className="icon fab fa-facebook"></i>
