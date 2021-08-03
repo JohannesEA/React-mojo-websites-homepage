@@ -39,7 +39,7 @@ const ImageSlider = ({ images, slidesToShow = 3 }) => {
     beforeChange: (current, next) => setImageIndex(next),
     responsive: [
       {
-        breakpoint: 1600,
+        breakpoint: 1800,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,

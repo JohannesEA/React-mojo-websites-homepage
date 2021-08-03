@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-      import { Form, FormGroup, Input } from "reactstrap";
+      import React, { useState } from "react";
       import { send } from "emailjs-com";
 
       //import { Link } from 'react-router-dom';
@@ -17,10 +16,10 @@ import React, { useState } from "react";
           e.preventDefault();
           if (validate()) {
             send(
-                "service_d92dhff",
-                "template_qlfe9vt",
+                "service_c4intou",
+                "template_39mbyff",
                 toSend,
-                "user_nXc7ccykjAkWk2linJAyS"
+                "user_1fuo6rPChJNJaBBRPrhaQ"
               
             )
               .then((response) => {
@@ -131,12 +130,12 @@ import React, { useState } from "react";
             </div>
         
             <div className=" contact-form-container">
-              <Form name="myForm" className="contact-form" onSubmit={onSubmit}>
+              <form name="myForm" className="contact-form" onSubmit={onSubmit}>
                 <div className="title form-title">Send oss en epost</div>
                 <p className="form-info-email"><i className="far fa-envelope"></i>mojo.websites1@gmail.com</p>
-                <FormGroup>
               
-                  <Input
+              
+                  <input
                     className="form-input"
                     id="form-name"
                     type="text"
@@ -145,10 +144,10 @@ import React, { useState } from "react";
                     value={toSend.from_name}
                     onChange={handleChange}
                   />
-                </FormGroup>
-                <FormGroup>
               
-                  <Input
+              
+              
+                  <input
                     className="form-input"
                     id="form-email"
                     type="text"
@@ -157,10 +156,9 @@ import React, { useState } from "react";
                     value={toSend.email}
                     onChange={handleChange}
                   />
-                </FormGroup>
-                <FormGroup>
+              
             
-                  <Input
+                  <input
                     className="form-input"
                     id="form-number"
                     type="text"
@@ -169,10 +167,10 @@ import React, { useState } from "react";
                     value={toSend.number}
                     onChange={handleChange}
                   />
-                </FormGroup>
-                <FormGroup>
+            
+             
               
-                  <Input
+                  <input
                     className="form-input"
                     id="form-subject"
                     type="text"
@@ -181,11 +179,10 @@ import React, { useState } from "react";
                     value={toSend.subject}
                     onChange={handleChange}
                   />
-                </FormGroup>
-                <FormGroup>
+         
                
-                  <Input
-                    className="form-input"
+                  <input
+                    className="form-input form-message"
                     id="form-message"
                     type="textarea"
                     name="message"
@@ -193,7 +190,7 @@ import React, { useState } from "react";
                     value={toSend.message}
                     onChange={handleChange}
                   />
-                </FormGroup>
+              
       
                 <div id="confirmation-area" className="confirmation-area">
                   <p className="conf-text" id="conf-text" name="conf-text"></p>
@@ -208,7 +205,7 @@ import React, { useState } from "react";
                     <p>Send</p>
                   </button>
                 </div>
-              </Form>
+              </form>
             </div>
           </section>
         );

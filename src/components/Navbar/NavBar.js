@@ -19,9 +19,9 @@ const NavBar = () => {
   window.addEventListener("scroll", changeNavbarSize);
   const [isOpen, setOpen] = useState(false)
 
-
+const handleHamburgerClick = () => setOpen(!isOpen);
   return (
-    <div className={sizeChange ? "my-navbar nav-size-change-on-scroll" : "my-navbar"}>
+    <div className={sizeChange ? "my-navbar nav-change-on-scroll" : "my-navbar"}>
       
         
     <li className="nav-logo-link">
@@ -31,7 +31,7 @@ const NavBar = () => {
             spy={true}
             smooth={true}
             offset={-100}
-            duration={300}
+            duration={400}
           >
             MoJo
           </Link></li>
@@ -45,8 +45,9 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={300}
-              onClick={handleClick}
+              duration={400}
+              onClick={function(event){ handleHamburgerClick(); handleClick()}}
+
             >
               Hjem
             </Link>
@@ -58,8 +59,9 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={300}
-              onClick={handleClick}
+              duration={400}
+              onClick={function(event){ handleHamburgerClick(); handleClick()}}
+
             >
               Om oss
             </Link>
@@ -71,8 +73,9 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={300}
-              onClick={handleClick}
+              duration={400}
+              onClick={function(event){ handleHamburgerClick(); handleClick()}}
+
             >
               Tjenester
             </Link>
@@ -84,8 +87,9 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={300}
-              onClick={handleClick}
+              duration={400}
+              onClick={function(event){ handleHamburgerClick(); handleClick()}}
+
             >
               Portfølje
             </Link>
@@ -97,8 +101,9 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={300}
-              onClick={handleClick}
+              duration={400}
+              onClick={function(event){ handleHamburgerClick(); handleClick()}}
+
             >
               Kontakt oss
             </Link>

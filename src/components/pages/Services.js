@@ -1,6 +1,7 @@
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 import DynamicFeedOutlinedIcon from "@material-ui/icons/DynamicFeedOutlined";
+import { Link } from "react-scroll";
 
 const Services = () => {
   return (
@@ -38,6 +39,14 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={400}
+          >      <button className="btn services-btn">Kontakt oss</button>
+</Link>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/Navbar/NavBar";
 import About from "./components/pages/About";
-// import Contact from "./components/pages/Contact";
+import Contact from "./components/pages/Contact";
 import Hero from "./components/pages/Hero";
 // import Portfolio from "./components/pages/Portfolio";
 import Fab from "@material-ui/core/Fab"
@@ -31,7 +31,7 @@ function App() {
      <About/>
      <Services/>
     <Portfolio images={IMAGES} slidesToShow={3}/>
-     {/* <Contact/> */}
+    <Contact/> 
      <Footer/>
     </div>
   );
