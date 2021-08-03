@@ -126,6 +126,45 @@ ul {
 
 /*End of fab butotn*/
 
+/*fade inn effects*/
+
+.onepage {
+  animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0.2;}
+  100% {opacity:1;}
+}
+
+.loading-logo{
+  height: 40em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut linear 1s;  
+}
+
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+
+@keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+/*fade in effects*/
+
+
+
 /*Hero*/
 
 .hero {
@@ -201,12 +240,14 @@ ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 1em;
   }
 
   .hero-img {
     width: auto;
     height: auto;
     margin-bottom: 2em;
+    padding: 0;
 
   }
 
@@ -330,8 +371,8 @@ ul {
 @media screen and (max-width: 400px) {
 
   .hero-img img {
-    width: 18em;
-    height: 13em;
+    width: 20em;
+    height: 15em;
 
   }
 
@@ -578,7 +619,7 @@ text-align: center;
 height: auto;
 background-color: white;
 padding: var(--padding-3);
-border-radius: var(--default-box-radius);
+border-radius: 1em;
 box-shadow: 0 4px 8px 0 var(--color-5);
 transition: all var(--media-transition);
 }
@@ -592,7 +633,8 @@ transition: all var(--media-transition);
  display: flex;
  align-items: center;
  flex-direction: column;
- padding: var(--padding-5);
+ padding: var(--padding-2) ;
+ border-radius: 1em;
 }
 
 .form-info-email {
@@ -619,7 +661,7 @@ input {
  height: 4em;
  margin: 1em auto;
  border-radius: .3em;
- border: .5px solid var(--color-4);
+ border: .2px solid var(--color-5);
 
 }
 
