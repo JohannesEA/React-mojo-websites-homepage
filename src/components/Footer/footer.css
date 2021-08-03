@@ -1,26 +1,17 @@
 .footer{
-    height: 8em;
+    height: auto;
     width: 100%;
     background-color: var(--color-4);
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    padding-bottom: 0;
+    flex-direction: column;
+    color: var(--color-3);
+    }
 
 .footer-content{
     display: flex;
     align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding-left: 1em;
-    width: 86px;
-    height: 45px;
-    font-family: Philosopher;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 45px;
-    cursor: pointer;
+    flex-direction: column;
 
 }
 
@@ -28,4 +19,22 @@
     background: -webkit-linear-gradient(rgb(0, 16, 245), rgb(240, 240, 240));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.footer-text{
+
+}
+
+.footer-copyright{
+    bottom: 0;
+    text-align: center;
+
+    margin-bottom: 0;
+   
+}
+
+.footer-icons .icon {
+    color: white;
+    margin: auto 1em;
+    font-size: 2em;
 }

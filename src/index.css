@@ -592,12 +592,21 @@ margin: 2em auto;
 .form-title {
 font-size: 35px;
 }
-
+input {
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 .form-input {
  width: 40em;
  height: 4em;
  margin: 1em auto;
- border-radius: 1em;
+ border-radius: .3em;
+ border: .5px solid var(--color-4);
+
 }
 
 .form-message{
