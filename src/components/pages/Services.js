@@ -2,11 +2,14 @@ import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 import DynamicFeedOutlinedIcon from "@material-ui/icons/DynamicFeedOutlined";
 import { Link } from "react-scroll";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
+  AOS.init();
   return (
-    <div className="section services">
-      <div className="services-content">
+    <div className="section services" >
+      <div className="services-content"  data-aos="zoom-in-up">
         <div className="services-title title">Tjenester</div>
         <div className="services-text text">
           Vi ønsker å gi deg den beste nettsiden til en billig penge.
@@ -14,7 +17,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="services-focus-areas">
+      <div className="services-focus-areas"  data-aos="zoom-in-up">
         <div className="services-card">
           <DynamicFeedOutlinedIcon className="services-icon" />
           <div className="services-container">
@@ -23,7 +26,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="services-card">
+        <div className="services-card"  data-aos="zoom-in-up">
           <HelpOutlineIcon className="services-icon" />
           <div className="services-container">
             <h3>Informasjon</h3>

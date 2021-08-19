@@ -18,8 +18,13 @@ const NavBar = () => {
   };
   window.addEventListener("scroll", changeNavbarSize);
   const [isOpen, setOpen] = useState(false)
-
-const handleHamburgerClick = () => setOpen(!isOpen);
+const handleHamburgerClick = () =>   
+{if (window.innerWidth <= 960 ) {
+  setOpen(!isOpen);
+} else {
+  setOpen(isOpen);
+}
+};
   return (
     <div className={sizeChange ? "my-navbar nav-change-on-scroll" : "my-navbar"}>
       
@@ -37,11 +42,11 @@ const handleHamburgerClick = () => setOpen(!isOpen);
           </Link></li>
       
         <div className="nav-container-right">
-        <ul className={click ? "nav-menu active" : "nav-menu" && sizeChange ? "nav-menu nav-menu-size-change-on-scroll" : "nav-menu"}>
-          <li className="nav-item nav-item-home">
+        <ul className={(click && window.innerWidth < 960) ? "nav-menu active" : "nav-menu" && sizeChange ? "nav-menu nav-menu-size-change-on-scroll" : "nav-menu"}>
+          <li className={click ? "nav-item  active" : "nav-item "}>
             <Link
               to="hero"
-              className="nav-links"
+              className={click ? "nav-links  active" : "nav-links "}
               spy={true}
               smooth={true}
               offset={-100}
@@ -52,7 +57,7 @@ const handleHamburgerClick = () => setOpen(!isOpen);
               Hjem
             </Link>
           </li>
-          <li className="nav-item nav-item-about">
+          <li className={click ? "nav-item  active" : "nav-item "}>
             <Link
               to="about"
               className="nav-links"
@@ -66,7 +71,7 @@ const handleHamburgerClick = () => setOpen(!isOpen);
               Om oss
             </Link>
           </li>
-          <li className="nav-item nav-item-services">
+          <li className={click ? "nav-item  active" : "nav-item "}>
             <Link
               to="services"
               className="nav-links"
@@ -80,7 +85,7 @@ const handleHamburgerClick = () => setOpen(!isOpen);
               Tjenester
             </Link>
           </li>
-          <li className="nav-item nav-item-portfolio">
+          <li className={click ? "nav-item  active" : "nav-item "}>
             <Link
               to="portfolio"
               className="nav-links"
@@ -94,7 +99,7 @@ const handleHamburgerClick = () => setOpen(!isOpen);
               Portfølje
             </Link>
           </li>
-          <li className="nav-item nav-item-contact">
+          <li className={click ? "nav-item  active" : "nav-item "}>
             <Link
               to="contact"
               className="nav-links"

@@ -9,8 +9,6 @@ import Fab from "@material-ui/core/Fab"
 import Services from "./components/pages/Services";
 import { IMAGES } from "./data/data";
 
-
-
 import "./index.css"
 import React, { useState, useEffect } from "react";
 import Portfolio from "./components/pages/Portfolio";

@@ -1,9 +1,12 @@
       import React, { useState } from "react";
       import { send } from "emailjs-com";
+      import AOS from 'aos';
+import 'aos/dist/aos.css';
 
       //import { Link } from 'react-router-dom';
       
       function Contact() {
+        AOS.init();
         const [toSend, setToSend] = useState({
           name: "",
           email: "",
@@ -121,15 +124,15 @@
         /* function sendKvitteringTilbakeTilPersonSomSenderForespørsel*/
       
         return (
-          <section className="section contact" id="contact">
-            <div className="title contact-title">Kontakt oss</div>
-            <div className="text contact-text">
+          <section className="section contact" id="contact"  >
+            <div className="title contact-title"  data-aos="zoom-in-up">Kontakt oss</div>
+            <div className="text contact-text"  data-aos="zoom-in-up">
               <p>
                 Ønsker du en enkel og fungerende hjemmeside? Send oss en forespørsel.
               </p>
             </div>
         
-            <div className=" contact-form-container">
+            <div className=" contact-form-container"  data-aos="zoom-in-up">
               <form name="myForm" className="contact-form" onSubmit={onSubmit}>
                 <div className="title form-title">Send oss en epost</div>
                 <p className="form-info-email"><i className="far fa-envelope"></i>mojo.websites1@gmail.com</p>
