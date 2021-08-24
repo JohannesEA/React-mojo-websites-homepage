@@ -7,39 +7,65 @@ import Hero from "./components/pages/Hero";
 import Fab from "@material-ui/core/Fab"
 // import AddIcon from '@material-ui/icons/Add';
 import Services from "./components/pages/Services";
+import Portfolio from "./components/pages/Portfolio";
 import { IMAGES } from "./data/data";
 
 import "./index.css"
-import React, { useState, useEffect } from "react";
-import Portfolio from "./components/pages/Portfolio";
+import React, { useState, useEffect, Component } from "react";
 
-function App() {
+import counterpart from "counterpart";
+import en from "./components/languages/en";
+import nor from "./components/languages/nor";
 
-  const [isNorwegian, setLanguage] = useState(false);
+counterpart.registerTranslations("en", en);
+counterpart.registerTranslations("nor", nor);
+counterpart.setLocale("nor");
 
-  const handleClick = () => setLanguage(!isNorwegian);
 
-  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-    }, 1000)
-  }, [])
+class App extends Component {
 
-  return (
+  state = {
+    lang: 'en'
+  }
+
+  onLangChange = (e) => {
+    this.setState({lang: e.target.value});
+    counterpart.setLocale(e.target.value);
+  }
+
+  // const [isNorwegian, setLanguage] = setLanguage(false);
+
+  // handleClick = (e) => {setLanguage(!isNorwegian)};
+
+  render()  {   
+    
+
+
+  // const [loading, setLoading] = setLoading(false);
+
+  // useEffect(() => {
+  //   setLoading(true)
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 1000)
+  // }, [])
+    return (
     <div className="App">
-      {loading ? (
+      {/* {loading ? (
       <div
       Loader
       className="loading-logo"
       size={50} ><img src="/mojo-logo2.png" alt="loading-img"></img></div>
-    ) : (
+    ) : ( */}
       <div className="onepage">
     <NavBar/>
     <Fab className="language-selector" color="primary" aria-label="add">
-    <img  src={!isNorwegian ? "/assets/images/norwegian.png" : "/assets/images/english-logo.png"} alt="flag-img" onClick={handleClick}></img>
+    {/* <img  src={!isNorwegian ? "/assets/images/norwegian.png" : "/assets/images/english-logo.png"} alt="flag-img" onClick={this.onLangChange}></img> */}
+    <select value={this.state.lang} onChange={this.onLangChange}>
+          <option value="en">EN</option>
+          <option value="nor">NOR</option>
+        </select>
     </Fab>
      <Hero/>
      <About/>
@@ -48,9 +74,10 @@ function App() {
     <Contact/> 
      <Footer/>
      </div>
-    )}
+    {/* )} */}
     </div>
-  );
+    );
+  } 
 }
 
 export default App;
