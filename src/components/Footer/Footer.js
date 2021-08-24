@@ -1,5 +1,6 @@
 import {Link} from "react-scroll";
 import "./footer.css";
+import Translate from "react-translate-component";
 
 const Footer = () => {
     return (
@@ -17,7 +18,7 @@ const Footer = () => {
               duration={400}
               >MoJo</Link>
               </div>
-          <div className="text footer-text">MoJo Websites for deg som ønsker en enkel og perfekt fungerende nettside.</div>
+          <div className="text footer-text"><Translate content="footer_text.p1" component="div" /></div>
           <div className="footer-icons">
           <i className="icon fab fa-facebook"></i>
           <i className="icon fab fa-linkedin"></i>

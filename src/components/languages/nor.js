@@ -22,6 +22,26 @@ export default {
     btn5: "Kontakt oss",
     btn6: "Send",
   },
+  imagetext:{
+
+    img1:"Tekst for bilde 1",
+    img2:"Tekst for bilde 2",
+    img3:"Tekst for bilde 3",
+    img4:"Tekst for bilde 4",
+    img5:"Tekst for bilde 5",
+    img6:"Tekst for bilde 6",
+    
+  },
+  errormsg:{
+    msg1: "Navn-feltet trenger en verdi.",
+    msg2: "Epost-feltet trenger en korrekt verdi.",
+    msg3: "Mobilnummer-feltet trenger en korrekt verdi.",
+    msg4: "Tittel-feltet trenger en korrekt verdi.",
+    msg5: "Forespørsel-feltet trenger en korrekt verdi.",
+  },
+  successmsg:{
+    msg1: "Takk for din forespørsel! Vi svarer deg så fort som mulig.  Mvh MoJo Websites.",
+  },
 
   hero_text: {
     p1: "MoJo Websites for deg som ønsker en enkel og perfekt fungerende nettside.",

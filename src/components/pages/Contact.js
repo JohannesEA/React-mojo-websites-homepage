@@ -2,14 +2,9 @@ import React, { useState } from "react";
 import { send } from "emailjs-com";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import counterpart from "counterpart";
 import Translate from "react-translate-component";
-import en from "../languages/en";
-import nor from "../languages/nor";
+import jsxToString from 'jsx-to-string';
 
-counterpart.registerTranslations("en", en);
-counterpart.registerTranslations("nor", nor);
-counterpart.setLocale("nor");
 //import { Link } from 'react-router-dom';
 
 function Contact() {
@@ -66,9 +61,17 @@ function Contact() {
     const re =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+let errorMsg1 = (<Translate content="errormsg.msg1" component="p" />);
+let errorMsg2 = (<Translate content="errormsg.msg2" component="p" />);
+let errorMsg3 = (<Translate content="errormsg.msg3" component="p" />);
+let errorMsg4 = (<Translate content="errormsg.msg4" component="p" />);
+let errorMsg5 = (<Translate content="errormsg.msg5" component="p" />);
+let successMsg= (<Translate content="successmsg.msg1" component="p" />);
+
+
     if (name.value === "") {
       alertArea.style.color = "red";
-      alertArea.innerHTML = "Navn-feltet trenger en verdi.";
+      alertArea.innerHTML = errorMsg1;
       isCorrect = false;
       console.log(isCorrect);
     } else if (
@@ -78,28 +81,27 @@ function Contact() {
       console.log(email.value);
 
       alertArea.style.color = "red";
-      alertArea.innerHTML = "Epost-feltet trenger en korrekt verdi.";
+      alertArea.innerHTML = errorMsg2;
       isCorrect = false;
       console.log(isCorrect);
     } else if (number.value.length < 8) {
       alertArea.style.color = "red";
-      alertArea.innerHTML = "Mobilnummer-feltet trenger en korrekt verdi.";
+      alertArea.innerHTML = errorMsg3;
       isCorrect = false;
       console.log(isCorrect);
     } else if (subject.value === "") {
       alertArea.style.color = "red";
-      alertArea.innerHTML = "Tittel-feltet trenger en korrekt verdi.";
+      alertArea.innerHTML = errorMsg4;
       isCorrect = false;
       console.log(isCorrect);
     } else if (message.value === "") {
       alertArea.style.color = "red";
-      alertArea.innerHTML = "Forespørsel-feltet trenger en korrekt verdi.";
+      alertArea.innerHTML = errorMsg5;
       isCorrect = false;
       console.log(isCorrect);
     } else {
       alertArea.style.color = "#00193b";
-      alertArea.innerHTML =
-        "Takk for din forespørsel! Vi svarer deg så fort som mulig.  Mvh MoJo Websites.";
+      alertArea.innerHTML =successMsg;
       return isCorrect;
     }
   }
@@ -123,7 +125,7 @@ function Contact() {
 
       alertArea.style.color = "#00193b";
       alertArea.innerHTML =
-        "Takk for din forespørsel! Vi svarer deg så fort som mulig. Mvh MoJo Websites.";
+      <Translate content="successmsg.msg1" component="p" />;
     }
   }
 

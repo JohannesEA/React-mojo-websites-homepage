@@ -1,15 +1,8 @@
 import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import counterpart from "counterpart";
 import Translate from "react-translate-component";
-import en from "../languages/en";
-import nor from "../languages/nor";
 
-counterpart.registerTranslations("en", en);
-counterpart.registerTranslations("nor", nor);
-
-counterpart.setLocale("nor");
 
 const About = () => {
   AOS.init();

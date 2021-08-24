@@ -102,13 +102,29 @@ ul {
 
 }
 
+.language-select{
+  
+  height: 4em;
+  width: 5em;
+  border-radius: 100%;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,192,255,1) 100%);
+  color: white;
+  border:0px;
+  outline: 0px;
+  
+}
+
+
+
+
+
 /*End of defaults*/
 
 
 /*Fab button*/
-.MuiFab-label {
+/* .MuiFab-label {
   color: var(--color-3);
-}
+} */
 
 .MuiButtonBase-root {
   z-index: 1001;
@@ -120,9 +136,9 @@ ul {
   top: auto !important;
 }
 
-.language-selector img{
+/* .language-selector img{
   height: 4em;
-}
+} */
 
 /*End of fab butotn*/
 

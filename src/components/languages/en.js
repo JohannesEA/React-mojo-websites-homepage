@@ -22,6 +22,27 @@ export default {
     btn5: "Contact",
     btn6: "Send",
   },
+  imagetext:{
+
+    img1:"Text for img 1",
+    img2:"Text for img 2",
+    img3:"Text for img 3",
+    img4:"Text for img 4",
+    img5:"Text for img 5",
+    img6:"Text for img 6",
+    
+  },
+   errormsg:{
+    msg1: "The name field needs a value.",
+    msg1: "The email field needs a correct value.",
+    msg1: "The mobile number field needs a correct value.",
+    msg1: "The title field needs a correct value.",
+    msg1: "The request field needs a correct value.",
+  },
+  successmsg:{
+    msg1: "Thank you for your request! We will answer you as soon as possible. Regards MoJo Websites.",
+  },
+
   hero_text: {
     p1: "MoJo Websites for you who want a simple and perfectly functioning website.",
 
