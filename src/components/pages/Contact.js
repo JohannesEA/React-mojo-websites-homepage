@@ -3,7 +3,7 @@ import { send } from "emailjs-com";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Translate from "react-translate-component";
-import jsxToString from 'jsx-to-string';
+// import jsxToString from 'jsx-to-string';
 
 //import { Link } from 'react-router-dom';
 
