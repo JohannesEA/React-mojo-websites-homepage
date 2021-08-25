@@ -56,7 +56,6 @@ body {
   max-width: var(--default-image-width);
   height: 25em;
   width: 20em;
-  border-radius: var(--default-box-radius);
 }
 
 .title{
@@ -122,9 +121,9 @@ ul {
 
 
 /*Fab button*/
-/* .MuiFab-label {
+.MuiFab-label {
   color: var(--color-3);
-} */
+} 
 
 .MuiButtonBase-root {
   z-index: 1001;
@@ -136,9 +135,9 @@ ul {
   top: auto !important;
 }
 
-/* .language-selector img{
+.language-selector img{
   height: 4em;
-} */
+} 
 
 /*End of fab butotn*/
 

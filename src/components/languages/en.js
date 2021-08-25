@@ -34,10 +34,10 @@ export default {
   },
    errormsg:{
     msg1: "The name field needs a value.",
-    msg1: "The email field needs a correct value.",
-    msg1: "The mobile number field needs a correct value.",
-    msg1: "The title field needs a correct value.",
-    msg1: "The request field needs a correct value.",
+    msg2: "The email field needs a correct value.",
+    msg3: "The mobile number field needs a correct value.",
+    msg4: "The title field needs a correct value.",
+    msg5: "The request field needs a correct value.",
   },
   successmsg:{
     msg1: "Thank you for your request! We will answer you as soon as possible. Regards MoJo Websites.",
