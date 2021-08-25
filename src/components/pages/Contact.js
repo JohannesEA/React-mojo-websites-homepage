@@ -21,10 +21,10 @@ function Contact() {
     e.preventDefault();
     if (validate()) {
       send(
-        "service_c4intou",
-        "template_39mbyff",
+        "service_d92dhff",
+        "template_qlfe9vt",
         toSend,
-        "user_1fuo6rPChJNJaBBRPrhaQ"
+        "user_nXc7ccykjAkWk2linJAyS"
       )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
