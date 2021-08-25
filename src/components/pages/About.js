@@ -8,7 +8,7 @@ const About = () => {
   AOS.init();
 
   return (
-    <div className="section about" data-aos="zoom-in-up">
+    <div className="section about"  data-aos="zoom-in-up" >
       <div className="about-content">
         <div className="about-title title">
           <Translate content="titles.title2" component="div" />
