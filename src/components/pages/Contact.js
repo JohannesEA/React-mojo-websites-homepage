@@ -146,9 +146,9 @@ let successMsg= (<Translate content="successmsg.msg1" component="p" />);
             {" "}
             <Translate content="contact_text.p2" component="div" />
           </div>
-          <p className="form-info-email">
+          <div className="form-info-email">
             <i className="far fa-envelope"></i>mojo.websites1@gmail.com
-          </p>
+          </div>
 
           <input
             className="form-input"

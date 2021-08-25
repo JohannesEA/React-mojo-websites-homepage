@@ -2,12 +2,9 @@ import { Link } from "react-scroll";
 import Translate from "react-translate-component";
 
 const Hero = () => {
-
-
   return (
     <div className="section hero">
       <div className="hero-content">
-  
         <div className="hero-title title">
           Mo<span>Jo</span> Websites
           {/* <Translate content="titles.title1" component="div" /> */}

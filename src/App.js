@@ -1,17 +1,19 @@
+import React, { Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/Navbar/NavBar";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Hero from "./components/pages/Hero";
-// import Portfolio from "./components/pages/Portfolio";
-import Fab from "@material-ui/core/Fab";
-// import AddIcon from '@material-ui/icons/Add';
 import Services from "./components/pages/Services";
 import Portfolio from "./components/pages/Portfolio";
-import { IMAGES } from "./data/data";
+import Test from "./components/pages/Test";
 
+import Fab from "@material-ui/core/Fab";
+// import AddIcon from '@material-ui/icons/Add';
+import { IMAGES } from "./data/data";
 import "./index.css";
-import React, { Component } from "react";
 
 import counterpart from "counterpart";
 import en from "./components/languages/en";
@@ -53,11 +55,6 @@ class App extends Component {
     i++;
   }
 
-
-  // const [isNorwegian, setLanguage] = setLanguage(false);
-
-  // handleClick = (e) => {setLanguage(!isNorwegian)};
-
   render() {
     // const [loading, setLoading] = setLoading(false);
 
@@ -89,6 +86,13 @@ class App extends Component {
           <Footer />
         </div>
         {/* )} */}
+
+        <BrowserRouter>
+       <Switch>
+        {/* <Route exact path="/" component={Page1} /> */}
+        <Route path="/test" component={Test} />
+      </Switch>
+      </BrowserRouter>
       </div>
     );
   }

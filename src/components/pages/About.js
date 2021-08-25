@@ -14,7 +14,7 @@ const About = () => {
           <Translate content="titles.title2" component="div" />
         </div>
         <div className="about-text text">
-          <Translate content="about_text.p1" component="div" />
+          <Translate content="about_text.p1" component="p" />
         </div>
 
         <div className="about-btn">
