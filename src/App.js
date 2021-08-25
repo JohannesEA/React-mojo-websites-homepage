@@ -11,7 +11,7 @@ import Portfolio from "./components/pages/Portfolio";
 import { IMAGES } from "./data/data";
 
 import "./index.css";
-import React, { useState, useEffect, Component } from "react";
+import React, { Component } from "react";
 
 import counterpart from "counterpart";
 import en from "./components/languages/en";
@@ -20,6 +20,10 @@ import nor from "./components/languages/nor";
 counterpart.registerTranslations("en", en);
 counterpart.registerTranslations("nor", nor);
 counterpart.setLocale("nor");
+
+let i = 0;
+let isNorwegian = true;
+
 
 class App extends Component {
   state = {
@@ -30,6 +34,25 @@ class App extends Component {
     this.setState({ lang: e.target.value });
     counterpart.setLocale(e.target.value);
   };
+
+
+  handleLanguageChange = () => {
+    if (i % 2 === 0){
+      isNorwegian = false;
+      console.log("Language: English")
+      this.setState({ lang: "en" });
+      counterpart.setLocale("en");
+    }
+    else{
+      isNorwegian = true;
+      console.log("Language: Norwegian")
+      this.setState({ lang: "nor" });
+      counterpart.setLocale("nor");
+    }
+   
+    i++;
+  }
+
 
   // const [isNorwegian, setLanguage] = setLanguage(false);
 
@@ -54,20 +77,9 @@ class App extends Component {
     ) : ( */}
         <div className="onepage">
           <NavBar />
-          <Fab className="language-selector" color="primary" aria-label="add">
-            {/* <img  src={!isNorwegian ? "/assets/images/norwegian.png" : "/assets/images/english-logo.png"} alt="flag-img" onClick={this.onLangChange}></img> */}
-            <select
-              className="language-select"
-              value={this.state.lang}
-              onChange={this.onLangChange}
-            >
-              <option className="language-select-nor" value="nor">
-                NOR
-              </option>
-              <option className="language-select-en" value="en">
-                EN
-              </option>
-            </select>
+          <Fab className="language-selector" color="primary" aria-label="add" >
+             <img  src={isNorwegian ? "/assets/images/norwegian.png" : "/assets/images/english-logo.png"} alt="flag-img" onClick={this.handleLanguageChange}></img> 
+        
           </Fab>
           <Hero />
           <About />
