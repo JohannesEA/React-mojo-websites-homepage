@@ -1,6 +1,6 @@
 
 
-import ImageSlider from "../Imageslider/ImageSlider";
+import ImageSlider from "../../Imageslider/ImageSlider";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Translate from "react-translate-component";

@@ -1,13 +1,21 @@
 import { Link } from "react-scroll";
 import Translate from "react-translate-component";
+import { Link as RouterLink } from "react-router-dom";
+
 
 const Hero = () => {
   return (
     <div className="section hero">
       <div className="hero-content">
+        <RouterLink class="page_link" to="/success">
+          Success
+        </RouterLink>
+        <RouterLink class="page_link" to="/animation">
+          Animation
+        </RouterLink>
+
         <div className="hero-title title">
           Mo<span>Jo</span> Websites
-          {/* <Translate content="titles.title1" component="div" /> */}
         </div>
         <div className="hero-text text">
           <Translate content="hero_text.p1" component="div" />

@@ -1,0 +1,52 @@
+.animation-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em 1em;
+}
+.animation-page-hero{
+    max-width: 50em;
+}
+.image-carouselle{
+max-width: 100%;
+
+}
+
+
+.image-carouselle-item {
+    padding: 1em;
+    background-color: var(--color-5);
+    text-align: center;
+    border-radius:  var(--default-box-radius);
+
+}
+.image-carouselle-item img{
+    max-width: 80%;
+    max-height: 100%;
+    border-radius: var(--default-box-radius);
+}
+
+
+.animation-page-card{
+    margin: 2em auto;
+    max-width: 50em;
+    background-color: red;
+}
+.card {
+    width: 45ch;
+    height: 45ch;
+    background: grey;
+    border-radius: 5px;
+    background-image: url("./headshot-johannes.jpg");
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    border: 15px solid white;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
