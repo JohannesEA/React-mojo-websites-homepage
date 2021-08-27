@@ -11,7 +11,7 @@ const About = () => {
     <div className="section about"  data-aos="zoom-in-up" >
       <div className="about-content">
         <div className="about-title title">
-          <Translate content="titles.title2" component="div" />
+          <Translate content="titles.title2" component="h2" />
         </div>
         <div className="about-text text">
           <Translate content="about_text.p1" component="p" />

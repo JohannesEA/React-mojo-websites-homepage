@@ -20,9 +20,9 @@ const Footer = () => {
               </div>
           <div className="text footer-text"><Translate content="footer_text.p1" component="div" /></div>
           <div className="footer-icons">
-          <i className="icon fab fa-facebook"></i>
-          <i className="icon fab fa-linkedin"></i>
-          <i className="icon fab fa-instagram"></i>
+          <a href="https://www.facebook.com/johannesea"><i className="icon fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/johannes-erdahl-andresen-2aa117205/"><i className="icon fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/mojowebsites1/"><i className="icon fab fa-instagram"></i></a>
           </div>
           </div>
           <div className="text footer-copyright">MoJo Websites © 2021</div>

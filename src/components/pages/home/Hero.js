@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <div className="section hero">
       <div className="hero-content">
-        <RouterLink class="page_link" to="/success">
+        <RouterLink className="page_link" to="/success">
           Success
         </RouterLink>
-        <RouterLink class="page_link" to="/animation">
+        <RouterLink className="page_link" to="/animation">
           Animation
         </RouterLink>
 
@@ -30,7 +30,7 @@ const Hero = () => {
             duration={400}
           >
             <button className="hero-btn-contact hero-btn btn">
-              <Translate content="buttons.btn2" component="p" />
+              <Translate content="buttons.btn5" component="p" />
             </button>
           </Link>
 
@@ -42,7 +42,7 @@ const Hero = () => {
             duration={400}
           >
             <button className="hero-btn-service hero-btn btn">
-              <Translate content="buttons.btn5" component="p" />
+              <Translate content="buttons.btn3" component="p" />
             </button>
           </Link>
         </div>

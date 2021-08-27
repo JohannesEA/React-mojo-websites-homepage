@@ -1,4 +1,4 @@
-export default {
+const nor = {
 
   navlinks: {
     link1: "Hjem",
@@ -39,6 +39,13 @@ export default {
     msg4: "Tittel-feltet trenger en korrekt verdi.",
     msg5: "Forespørsel-feltet trenger en korrekt verdi.",
   },
+placeholder:{
+p1: "Skriv inn ditt navn..",
+p2: "Skriv inn din epost..",
+p3: "skriv inn mobilnummer..",
+p4: "Skriv inn tittel på forespørsel..",
+p5: "Skriv inn din forespørsel..",
+},
   successmsg:{
     msg1: "Takk for din forespørsel! Vi svarer deg så fort som mulig.  Mvh MoJo Websites.",
   },
@@ -73,3 +80,5 @@ export default {
     p1: "MoJo Websites for deg som ønsker en enkel og perfekt fungerende nettside.",
   },
 }
+
+export default nor;

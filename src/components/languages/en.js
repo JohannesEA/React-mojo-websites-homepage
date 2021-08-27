@@ -1,4 +1,5 @@
-export default {
+
+const en = {
 
   navlinks: {
     link1: "Home",
@@ -20,7 +21,7 @@ export default {
     btn3: "Services",
     btn4: "Portfolio",
     btn5: "Contact",
-    btn6: "Send",
+    btn6: "Submit",
   },
   imagetext:{
 
@@ -39,6 +40,13 @@ export default {
     msg4: "The title field needs a correct value.",
     msg5: "The request field needs a correct value.",
   },
+  placeholder:{
+    p1: "Write your name..",
+    p2: "Write your email..",
+    p3: "Write your phone number..",
+    p4: "Write the title of your request..",
+    p5: "Write your request..",
+    },
   successmsg:{
     msg1: "Thank you for your request! We will answer you as soon as possible. Regards MoJo Websites.",
   },
@@ -73,3 +81,5 @@ export default {
     p1: "MoJo Websites for you who want a simple and perfectly functioning website.",
   },
 }
+
+export default en;

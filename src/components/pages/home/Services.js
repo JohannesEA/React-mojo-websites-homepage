@@ -6,18 +6,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Translate from "react-translate-component";
 
-
 const Services = () => {
   AOS.init();
   return (
     <div className="section services">
       <div className="services-content" data-aos="zoom-in-up">
         <div className="services-title title">
-        
-          <Translate content="titles.title3" component="div" />
+          <Translate content="titles.title3" component="h2" />
         </div>
         <div className="services-text text">
-          <Translate content="services_text.p1" component="div" />
+          <Translate content="services_text.p1" component="p" />
         </div>
       </div>
 
@@ -47,9 +45,7 @@ const Services = () => {
         </div>
       </div>
       <Link to="contact" spy={true} smooth={true} offset={-100} duration={400}>
-     
         <button className="btn services-btn">
-         
           <Translate content="buttons.btn5" component="p" />
         </button>
       </Link>

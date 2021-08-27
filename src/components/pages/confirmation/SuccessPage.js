@@ -9,7 +9,7 @@ const SuccessPage = () => {
   return (
     <div className="pages section success_page"  >
    Success!!!
-   <RouterLink class="page_link" to="/">
+   <RouterLink className="page_link" to="/">
                   Home
                 </RouterLink>
     </div>

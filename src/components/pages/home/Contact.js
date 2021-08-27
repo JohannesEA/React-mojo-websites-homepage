@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import Translate from "react-translate-component";
 // import jsxToString from 'jsx-to-string';
 
-//import { Link } from 'react-router-dom';
 
 function Contact() {
   AOS.init();
@@ -61,17 +60,19 @@ function Contact() {
     const re =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-let errorMsg1 = (<Translate content="errormsg.msg1" component="p" />);
-let errorMsg2 = (<Translate content="errormsg.msg2" component="p" />);
-let errorMsg3 = (<Translate content="errormsg.msg3" component="p" />);
-let errorMsg4 = (<Translate content="errormsg.msg4" component="p" />);
-let errorMsg5 = (<Translate content="errormsg.msg5" component="p" />);
-let successMsg= (<Translate content="successmsg.msg1" component="p" />);
+    //Parse from element to string
+    let errorMsg1 = <Translate content='errormsg.msg1' component='p' />;
+    let errorMsg2 = <Translate content="errormsg.msg2" component="p" />;
+    let errorMsg3 = <Translate content="errormsg.msg3" component="p" />;
+    let errorMsg4 = <Translate content="errormsg.msg4" component="p" />;
+    let errorMsg5 = <Translate content="errormsg.msg5" component="p" />;
+    let successMsg = <Translate content="successmsg.msg1" component="p" />;
+    var doc = new DOMParser().parseFromString(errorMsg1, "text/xml");
 
 
     if (name.value === "") {
       alertArea.style.color = "red";
-      alertArea.innerHTML = errorMsg1;
+      alertArea.innerHTML = errorMsg1.content;
       isCorrect = false;
       console.log(isCorrect);
     } else if (
@@ -101,7 +102,7 @@ let successMsg= (<Translate content="successmsg.msg1" component="p" />);
       console.log(isCorrect);
     } else {
       alertArea.style.color = "#00193b";
-      alertArea.innerHTML =successMsg;
+      alertArea.innerHTML = successMsg;
       return isCorrect;
     }
   }
@@ -124,8 +125,9 @@ let successMsg= (<Translate content="successmsg.msg1" component="p" />);
       }, 3000);
 
       alertArea.style.color = "#00193b";
-      alertArea.innerHTML =
-      <Translate content="successmsg.msg1" component="p" />;
+      alertArea.innerHTML = (
+        <Translate content="successmsg.msg1" component="p" />
+      );
     }
   }
 
@@ -134,7 +136,7 @@ let successMsg= (<Translate content="successmsg.msg1" component="p" />);
   return (
     <section className="section contact" id="contact">
       <div className="title contact-title" data-aos="zoom-in-up">
-        <Translate content="titles.title5" component="div" />
+        <Translate content="titles.title5" component="h2" />
       </div>
       <div className="text contact-text" data-aos="zoom-in-up">
         <Translate content="contact_text.p1" component="p" />
@@ -150,58 +152,59 @@ let successMsg= (<Translate content="successmsg.msg1" component="p" />);
             <i className="far fa-envelope"></i>mojo.websites1@gmail.com
           </div>
 
-          <input
+          <Translate
+            component="input"
+            type="text"
             className="form-input"
             id="form-name"
-            type="text"
-            name="name"
-            placeholder="Skriv inn ditt navn.."
             value={toSend.from_name}
             onChange={handleChange}
+            name="name"
+            attributes={{ placeholder: "placeholder.p1" }}
           />
-
-          <input
+          <Translate
+            component="input"
+            type="text"
             className="form-input"
             id="form-email"
-            type="text"
-            name="email"
-            placeholder="Skriv din epost.."
             value={toSend.email}
             onChange={handleChange}
+            name="email"
+            attributes={{ placeholder: "placeholder.p2" }}
           />
-
-          <input
+          <Translate
+            component="input"
+            type="text"
             className="form-input"
             id="form-number"
-            type="text"
-            name="number"
-            placeholder="Skriv mobilnummer.."
             value={toSend.number}
             onChange={handleChange}
+            name="number"
+            attributes={{ placeholder: "placeholder.p3" }}
           />
-
-          <input
+          <Translate
+            component="input"
+            type="text"
             className="form-input"
             id="form-subject"
-            type="text"
-            name="subject"
-            placeholder="Skriv inn tittel på forespørsel.."
             value={toSend.subject}
             onChange={handleChange}
+            name="subject"
+            attributes={{ placeholder: "placeholder.p4" }}
           />
-
-          <input
+          <Translate
+            component="input"
+            type="text"
             className="form-input form-message"
             id="form-message"
-            type="textarea"
-            name="message"
-            placeholder="Skriv inn din forespørsel.."
             value={toSend.message}
             onChange={handleChange}
+            name="message"
+            attributes={{ placeholder: "placeholder.p5" }}
           />
 
           <div id="confirmation-area" className="confirmation-area">
-            <p className="conf-text" id="conf-text" name="conf-text"></p>
+            <div className="conf-text" id="conf-text" name="conf-text"></div>
           </div>
 
           <div id="contact-btn-area" className="contact-btn-area">
@@ -211,6 +214,7 @@ let successMsg= (<Translate content="successmsg.msg1" component="p" />);
               onClick={() => refreshForm()}
             >
               <Translate content="buttons.btn6" component="p" />
+              
             </button>
           </div>
         </form>

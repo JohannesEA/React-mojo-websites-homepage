@@ -20,7 +20,7 @@ const AnimationPage = () => {
         <ImageAnimation />
       </div>
 
-      <RouterLink class="page_link" to="/">
+      <RouterLink className="page_link" to="/">
         Home
       </RouterLink>
     </div>
