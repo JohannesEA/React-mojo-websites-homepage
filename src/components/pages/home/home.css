@@ -246,6 +246,7 @@
   width: 18em;
 }
 
+
 @media screen and (max-width: 1200px) {
   .about {
     height: auto;

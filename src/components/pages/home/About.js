@@ -2,6 +2,9 @@ import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Translate from "react-translate-component";
+import ImageAnimation from "../animation/ImageAnimation"
+import ImageAnimation2 from "../animation/ImageAnimation2"
+
 
 
 const About = () => {
@@ -35,14 +38,16 @@ const About = () => {
 
       <div className="about-imgs">
         <div className="about-img about-johannes">
-          <img
+          {/* <img
             src="/assets/images/headshot-johannes.jpg"
             alt="johannes-img"
-          ></img>
+          ></img> */}
+          <ImageAnimation />
           Johannes Erdahl Andresen
         </div>
         <div className="about-img about-johannes">
-          <img src="/assets/images/magnus-heashot.png" alt="magnus-img"></img>
+          {/* <img src="/assets/images/magnus-heashot.png" alt="magnus-img"></img> */}
+          <ImageAnimation2/>
           Magnus Sødergren
         </div>
       </div>
