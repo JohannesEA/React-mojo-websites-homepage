@@ -56,7 +56,7 @@ const en = {
 
   },
   about_text: {
-    p1: "This is a startup project that aims to create simple and highly functional websites for those who want it. We are 2 students, a dating engineer and a frontend student.",
+    p1: "This is a startup project that aims to create simple and highly functional websites. We are 2 students, one computer engineering- and one frontend student.",
  
 
   },

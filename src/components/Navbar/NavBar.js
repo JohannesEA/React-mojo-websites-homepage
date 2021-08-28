@@ -169,7 +169,7 @@ const NavBar = () => {
           <img
           className="language-select-img"
             src={
-              isNorwegian
+              !isNorwegian
                 ? "/assets/images/norwegian.png"
                 : "/assets/images/english-logo.png"
             }
