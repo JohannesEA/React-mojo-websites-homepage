@@ -1,5 +1,7 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 
+import Fab from "@material-ui/core/Fab";
 import About from "./About";
 import Contact from "./Contact";
 import Hero from "./Hero";
@@ -10,10 +12,38 @@ import { IMAGES } from "../../../data/data";
 
 import "./home.css";
 
-class HomaPage extends Component {
-  render() {
+const HomaPage = () => {
+
+
+  const [showFab, setFab] = useState(false);
+
+  const makeFABVisible = () => {
+    if (window.scrollY >= 400) {
+      setFab(true);
+      
+      console.log("Show fab")
+    } else {
+      setFab(false);
+      console.log("Hide fab")
+    }
+  }
+  window.addEventListener("scroll", makeFABVisible);
+
+
     return (
       <div className="pages homepage">
+        <Fab className={showFab ? "fab-button active" : "fab-button"} color="primary" aria-label="add">
+        <Link
+          to="hero"
+          className={"fab-link"}
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={400}
+        >
+        <i className={showFab ? "fas fa-arrow-up" : ""}></i>
+        </Link>
+          </Fab>
         <Hero />
         <About />
         <Services />
@@ -22,6 +52,6 @@ class HomaPage extends Component {
       </div>
     );
   }
-}
+
 
 export default HomaPage;

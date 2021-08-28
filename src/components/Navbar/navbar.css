@@ -4,29 +4,18 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  position: sticky;
+  position: relative;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   top: 0;
-
-
-}
-
-.nav-container-left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 10em;
-  background-color: white;
 }
 
 .nav-logo-link {
   list-style: none;
-  padding-left: 1em;
-  width: 86px;
+  margin-left: 1em;
+  width: auto;
   height: 45px;
   font-family: Philosopher;
   font-style: normal;
@@ -35,8 +24,6 @@
   line-height: 45px;
   cursor: pointer;
   /* identical to box height */
-
-
 }
 
 .nav-logo {
@@ -45,14 +32,13 @@
   -webkit-text-fill-color: transparent;
 }
 
-
 .nav-container-right {
   display: flex;
   align-items: center;
   padding: 0;
   justify-content: center;
   font-size: 1.5rem;
-
+  margin-right: 1em;
 }
 
 .nav-menu {
@@ -69,12 +55,10 @@
   text-decoration: none;
   height: 100%;
   text-align: center;
-
 }
 
 .fa-code {
   margin-left: 1rem;
-
 }
 
 .nav-item {
@@ -83,14 +67,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto .5em;
+  margin: auto 0.5em;
   flex-direction: column;
-
 }
 
 .nav-links.active {
-
-
 }
 
 .nav-links:hover {
@@ -98,7 +79,6 @@
 }
 
 .nav-item:after {
-
   content: "";
   display: block;
   height: 1px;
@@ -112,13 +92,32 @@
   background: white;
 }
 
-
 .hamburger {
   display: none;
 }
 
+/* .language-select{
+  max-width: 8em;
+  margin: 0 auto;
+  background-color: transparent;
+  color: white;
+  outline: 0px;
+  border: 1px solid white;
+  border-radius: var(--default-box-radius);
+  font-size: 1.2rem;
 
-.nav-change-on-scroll {
+}
+.language-select option{
+  font-size: 1.2rem;
+} */
+
+
+.language-select-img{
+  max-width: 1.5em;
+  max-height: 1.5em;
+  margin: 0 auto;
+}
+/* .nav-change-on-scroll {
   background: rgba(82,105,127, .5) ;
     color: black;
     transition: all var(--media-transition);
@@ -141,7 +140,7 @@
 }
 .nav-change-on-scroll .nav-item:hover:after  {
   background: black;
-}
+} */
 
 @media screen and (max-width: 960px) {
   .nav-menu {
@@ -154,7 +153,7 @@
     left: -110%;
     opacity: 0;
     transition: all 0.5s ease;
-    padding-bottom: .6em;
+    padding-bottom: 0.6em;
   }
 
   .nav-menu.active {
@@ -164,19 +163,14 @@
     animation: fadeIn 1s;
     transition: all 0.5s ease;
     z-index: 1;
-
   }
-
-
 
   .nav-links {
     padding: 1.5rem;
     width: 100%;
     display: table;
     color: var(--color-3);
-
   }
-
 
   .hamburger {
     display: block;
@@ -188,7 +182,6 @@
     font-size: 1.8rem;
     cursor: pointer;
     color: var(--color-3);
-
   }
 }
 

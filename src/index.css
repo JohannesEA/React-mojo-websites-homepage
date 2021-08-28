@@ -106,17 +106,7 @@ ul {
 
 }
 
-.language-select{
-  
-  height: 4em;
-  width: 5em;
-  border-radius: 100%;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,192,255,1) 100%);
-  color: white;
-  border:0px;
-  outline: 0px;
-  
-}
+
 
 
 .page_link{
@@ -148,13 +138,13 @@ ul {
 
 
 /*Fab button*/
-.MuiFab-label {
-  color: var(--color-3);
-} 
-
-.MuiButtonBase-root {
+.fab-button {
+  height: 0 !;
+  width: 0 !important;
+  outline: 0px !important;
+  
   z-index: 1001;
-  background-color: var(--color-4) !important;
+  background-color: transparent !important;
   position: fixed !important;
   bottom: 1em !important;
   right: 1em !important;
@@ -162,8 +152,44 @@ ul {
   top: auto !important;
 }
 
-.language-selector img{
-  height: 4em;
+
+.fab-button.active{
+  height: 4em !important;
+  width: 4em !important;
+  border-radius: 100%;
+  background: transparent;
+  color: white;
+  background-color: white !important;
+}
+
+.fa-arrow-up{
+  height: 100%;
+  width: 100%;
+  font-size: 2.5rem;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.hidefab{
+  color: transparent;
+}
+/* .MuiFab-label {
+  color: var(--color-3);
+} 
+
+.MuiButtonBase-root {
+  z-index: 1001;
+  background-color: white !important;
+  position: fixed !important;
+  bottom: 1em !important;
+  right: 1em !important;
+  left: auto !important;
+  top: auto !important;
+} */
+
+.fab-button .fab-link h1{
+font-size: 2rem;
 } 
 
 /*End of fab button*/

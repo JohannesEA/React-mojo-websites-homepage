@@ -7,12 +7,12 @@ const Hero = () => {
   return (
     <div className="section hero">
       <div className="hero-content">
-        <RouterLink className="page_link" to="/success">
+        {/* <RouterLink className="page_link" to="/success">
           Success
         </RouterLink>
         <RouterLink className="page_link" to="/animation">
           Animation
-        </RouterLink>
+        </RouterLink> */}
 
         <div className="hero-title title">
           Mo<span>Jo</span> Websites
