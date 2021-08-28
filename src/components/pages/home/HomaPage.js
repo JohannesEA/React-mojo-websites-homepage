@@ -18,7 +18,7 @@ const HomaPage = () => {
   const [showFab, setFab] = useState(false);
 
   const makeFABVisible = () => {
-    if (window.scrollY >= 400) {
+    if (window.scrollY >= 100) {
       setFab(true);
       
       console.log("Show fab")

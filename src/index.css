@@ -160,6 +160,9 @@ ul {
   background: transparent;
   color: white;
   background-color: white !important;
+  transition: var(--media-transition) ease;
+  animation: fadeIn linear var(--media-transition) ;
+
 }
 
 .fa-arrow-up{
@@ -167,8 +170,10 @@ ul {
   width: 100%;
   font-size: 2.5rem;
   display: flex;
-
+  transition: var(--media-transition) ease;
   flex-direction: column;
+  animation: fadeIn linear var(--media-transition);
+
 }
 
 .hidefab{
@@ -188,9 +193,9 @@ ul {
   top: auto !important;
 } */
 
-.fab-button .fab-link h1{
+/* .fab-button .fab-link h1{
 font-size: 2rem;
-} 
+}  */
 
 /*End of fab button*/
 
